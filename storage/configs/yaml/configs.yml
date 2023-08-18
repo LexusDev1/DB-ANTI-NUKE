@@ -1,0 +1,11 @@
+Discord:
+    TOKEN: "MTAwMDMxMTczODYzOTU5NzY2OQ.GguIO6.phBFqHqjxDZ12AZ2IaXjRzxOj20b_0XMF8NUuQ"
+    PREFIX: "dsb?"
+
+SPOTIFY:
+    CLIENT_ID: "32f03af242d34992993d6e7e87c3c852"
+    CLIENT_SECRET: "2865f73d1f664e6581931f5b8ce1342c"
+LAVALINK:
+    HOST: "lavalink.net.dsb"
+    PASSWORD: "www.lavalink.dsb"
+    PORT: 888
