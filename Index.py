@@ -19,7 +19,7 @@ intents.typing = False
 intents.presences = False
 intents.message_content = True
 intents.members = True
-client = commands.Bot(command_prefix=PREFIX, intents=intents)
+client = commands.Bot(command_prefix=PREFIX, intents=intents, case_insensitive=False)
 
 async def is_event_cog(cog):
     try:
@@ -46,6 +46,8 @@ async def load_cogs():
                         else:
                             print(Fore.YELLOW + f"Loaded Cog: {cog_path}")
                         client.load_extension(cog_path)
+                        if folder_name == "__pycache__":
+                          os.system(f"rm -rf {folder_name}")
                     except Exception as e:
                         print(f"Failed to load cog {cog_path}: {e}")
 
