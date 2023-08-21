@@ -13,3 +13,6 @@ class LockDown(commands.Bot):
     overwrite = channel.overwrites_for(interaction.guild.default_role)
     overwrite.send_messages = False
     await channel.set_permissions(interaction.guild.default_role, overwrite=overwrite)
+    
+def setup(client):
+  client.add_cog(LockDown(client))
