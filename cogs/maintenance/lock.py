@@ -1,7 +1,7 @@
 import nextcord
 from nextcord.ext import commands
 
-class LockDown(commands.Bot):
+class LockDown(commands.Cog):
   def __init__(self, client):
     self.client = client
     
