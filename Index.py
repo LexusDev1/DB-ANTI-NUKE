@@ -55,5 +55,7 @@ async def main():
     print(Fore.YELLOW + "Loading cogs...")
     await load_cogs()
     await client.start(TOKEN)
+    async with bot.db.cursor() as cursor:
+        await cursor.execute("CREATE TABLE IF NOT EXISTS dblevel (level INTEGER, xp INTEGER, user, INTEGER, guild INTEGER)")
 
 asyncio.run(main())
